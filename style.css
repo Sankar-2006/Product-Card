@@ -1,0 +1,114 @@
+ /* Montserrat Regular */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+ /* Fraunces Regular */
+ @import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
+ * {
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ :root {
+     --bg-color: hsl(30, 38%, 92%);
+     --main-color: hsl(158, 36%, 37%);
+     --card-bg-color: hsl(0, 0%, 100%);
+     --primary-text-color: hsl(212, 21%, 14%);
+     --secondary-text-color: hsl(228, 12%, 48%);
+ }
+
+ body {
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--bg-color);
+ }
+
+ #mainContainer {
+     display: flex;
+     width: 45%;
+     max-height: 430px;
+     background-color: var(--card-bg-color);
+     border-radius: 10px;
+ }
+
+ #imageContainer {
+     flex: 1;
+ }
+
+ #imageContainer img {
+     border-radius: 10px 0 0 10px;
+     width: 290px;
+     height: 430px;
+     background-position: center;
+ }
+
+ #textContainer {
+     transform: translateX(30PX);
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+ }
+
+ #textContainer .topText {
+     text-transform: uppercase;
+     letter-spacing: 5px;
+     color: var(--secondary-text-color);
+     font-size: 14px;
+     font-weight: 500;
+ }
+
+ #textContainer .mainText {
+     font-family: 'Fraunces', serif;
+     font-weight: 700;
+     font-size: 30px;
+ }
+
+ #textContainer p {
+     font-size: 14px;
+     font-weight: 700;
+     width: 25ch;
+     line-height: 25px;
+     color: var(--secondary-text-color);
+ }
+
+ #textContainer .priceContainer {
+     transform: translateY(-15px);
+     display: flex;
+     align-items: center;
+ }
+
+ #textContainer .offerPrice {
+     padding-right: 20px;
+     font-family: 'Fraunces', serif;
+     font-weight: 700;
+     font-size: 35px;
+     color: var(--main-color);
+ }
+
+ #textContainer .originalPrice {
+     text-decoration: line-through;
+     color: var(--secondary-text-color);
+ }
+
+ #textContainer button {
+     width: 80%;
+     height: 50px;
+     background-color: var(--main-color);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transform: translateY(-8px);
+     border: none;
+     outline: none;
+     border-radius: 10px;
+     color: var(--card-bg-color);
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 14px;
+ }
+
+ #textContainer button img {
+    padding-right: 10px;
+ }
