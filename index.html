@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Set character encoding and viewport -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Set favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <!-- Set page title and link to stylesheet -->
-    <title>Frontend Mentor | Product preview card component</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <!-- Set character encoding and viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Set favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <!-- Set page title and link to stylesheet -->
+  <title>Frontend Mentor | Product preview card component</title>
 
-  <body>
-    <!-- Main container for the image and text sections -->
-    <section id="mainContainer">
-      <!-- Container for the product image -->
-      <section id="imageContainer">
-        <img src="./images/image-product-desktop.jpg" alt="Perfume" />
-      </section>
-      <!-- Container for the product text -->
-      <section id="textContainer">
-        <span class="topText">Perfume</span>
-        <div class="mainText">Gabrielle <br>Essence Eau <br> De Parfum</div>
-        <p>
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div class="priceContainer">
-          <span class="offerPrice">$149.99</span>
-          <span class="originalPrice">$169.99</span>
-        </div>
-        <button><img src="./images/icon-cart.svg" />Add to Cart</button>
-      </section>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <!-- Main container for the image and text sections -->
+  <section id="mainContainer">
+    <!-- Container for the product image -->
+    <section id="imageContainer">
+      <!-- <img src="./images/image-product-desktop.jpg" alt="Perfume" /> -->
     </section>
-  </body>
+    <!-- Container for the product text -->
+    <section id="textContainer">
+      <span class="topText">Perfume</span>
+      <div class="mainText">Gabrielle Essence Eau De Parfum</div>
+      <p>
+        A floral, solar and voluptuous interpretation composed by Olivier
+        Polge, Perfumer-Creator for the House of CHANEL.
+      </p>
+      <div class="priceContainer">
+        <span class="offerPrice">$149.99</span>
+        <span class="originalPrice">$169.99</span>
+      </div>
+      <button><img src="./images/icon-cart.svg" />Add to Cart</button>
+    </section>
+  </section>
+</body>
+
 </html>

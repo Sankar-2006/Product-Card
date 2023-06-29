@@ -1,3 +1,5 @@
+ @import url('./responsive.css');
+
  /* Montserrat Regular */
  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -6,14 +8,16 @@
 
  * {
      font-family: 'Montserrat', sans-serif;
+     margin: 0;
+     padding: 0;
  }
 
  :root {
      --bg-color: hsl(30, 38%, 92%);
      --main-color: hsl(158, 36%, 37%);
      --card-bg-color: hsl(0, 0%, 100%);
-     --primary-text-color: hsl(212, 21%, 14%);
-     --secondary-text-color: hsl(228, 12%, 48%);
+     --hover-color: hsl(212, 21%, 14%);
+     --primary-text-color: hsl(228, 12%, 48%);
  }
 
  body {
@@ -33,14 +37,13 @@
  }
 
  #imageContainer {
-     flex: 1;
- }
-
- #imageContainer img {
+     background-image: url(./images/image-product-desktop.jpg);
      border-radius: 10px 0 0 10px;
      width: 290px;
      height: 430px;
      background-position: center;
+     background-size: cover;
+     flex: 1;
  }
 
  #textContainer {
@@ -54,7 +57,7 @@
  #textContainer .topText {
      text-transform: uppercase;
      letter-spacing: 5px;
-     color: var(--secondary-text-color);
+     color: var(--primary-text-color);
      font-size: 14px;
      font-weight: 500;
  }
@@ -63,6 +66,7 @@
      font-family: 'Fraunces', serif;
      font-weight: 700;
      font-size: 30px;
+     width: 10ch;
  }
 
  #textContainer p {
@@ -70,7 +74,7 @@
      font-weight: 700;
      width: 25ch;
      line-height: 25px;
-     color: var(--secondary-text-color);
+     color: var(--primary-text-color);
  }
 
  #textContainer .priceContainer {
@@ -89,7 +93,7 @@
 
  #textContainer .originalPrice {
      text-decoration: line-through;
-     color: var(--secondary-text-color);
+     color: var(--primary-text-color);
  }
 
  #textContainer button {
@@ -107,8 +111,13 @@
      font-family: 'Montserrat', sans-serif;
      font-weight: 700;
      font-size: 14px;
+     transition: .2s ease-in-out;
  }
 
  #textContainer button img {
-    padding-right: 10px;
+     padding-right: 10px;
+ }
+
+ #textContainer button:hover {
+     background-color: var(--hover-color);
  }

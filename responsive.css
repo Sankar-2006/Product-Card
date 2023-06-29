@@ -1,0 +1,25 @@
+ @media (max-width: 450px) {
+     #mainContainer {
+         flex-direction: column;
+         width: 95%;
+         min-height: 90%;
+         max-height: 90%;
+     }
+
+     #imageContainer {
+         background-image: url(./images/image-product-mobile.jpg);
+         flex: none;
+         width: 100%;
+         height: 40vh;
+         border-radius: 10px 10px 0 0 ;
+     }
+
+     #textContainer .mainText {
+         width: 15ch;
+     }
+
+     #textContainer p {
+         width: 33ch;
+         line-height: normal;
+     }
+ }
