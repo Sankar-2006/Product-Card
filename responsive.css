@@ -1,25 +1,31 @@
- @media (max-width: 450px) {
-     #mainContainer {
-         flex-direction: column;
-         width: 95%;
-         min-height: 90%;
-         max-height: 90%;
-     }
+/* Styles for screens with a maximum width of 450px */
+@media (max-width: 450px) {
 
-     #imageContainer {
-         background-image: url(./images/image-product-mobile.jpg);
-         flex: none;
-         width: 100%;
-         height: 40vh;
-         border-radius: 10px 10px 0 0 ;
-     }
+    /* Styles for the main container */
+    #mainContainer {
+        flex-direction: column;
+        width: 95%;
+        min-height: 90%;
+        max-height: 90%;
+    }
 
-     #textContainer .mainText {
-         width: 15ch;
-     }
+    /* Styles for the image container */
+    #imageContainer {
+        background-image: url(./images/image-product-mobile.jpg);
+        flex: none;
+        width: 100%;
+        height: 40vh;
+        border-radius: 10px 10px 0 0;
+    }
 
-     #textContainer p {
-         width: 33ch;
-         line-height: normal;
-     }
- }
+    /* Styles for the main text within the text container */
+    #textContainer .mainText {
+        width: 15ch;
+    }
+
+    /* Styles for paragraphs within the text container */
+    #textContainer p {
+        width: 33ch;
+        line-height: normal;
+    }
+}
